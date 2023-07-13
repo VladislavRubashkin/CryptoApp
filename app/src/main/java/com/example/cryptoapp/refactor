@@ -1,0 +1,28 @@
+AppDatabase - double check
+
+Domain layer
+Data layer
+Presentation layer
+
+entity
+dbModel
+dto
+class Mappers
+
+it.getFormattedTime() - не делать на presentation layer(делать в mapper???)
+Picasso.get().load(it.getFullImageUrl()).into(ivLogoCoin) - don't do on presentation layer(делать в mapper???)
+
+Single<CoinInfoListOfData> - replace on coroutines
+Single<CoinPriceInfoRawData> - replace on coroutines
+
+
+notifyDataSetChanged() - replace
+
+val ivLogoCoin = itemView.ivLogoCoin  - kotlin синтетики устаревшие, replace viewBinding
+
+Альбомная ориентация - деление экрана по полам(слева - список элементов, справа - детальная инфо об элементе, при клике на него)
+для этого CoinDetailActivity - перевести на Fragment
+
+
+
+
